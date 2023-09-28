@@ -1,0 +1,165 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+   <!--
+This HTML was auto-generated from MATLAB code.
+To make changes, update the MATLAB code and republish this document.
+      --><title>app1</title><meta name="generator" content="MATLAB 9.13"><link rel="schema.DC" href="http://purl.org/dc/elements/1.1/"><meta name="DC.date" content="2023-09-28"><meta name="DC.source" content="app1.m"><style type="text/css">
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outine:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+
+html { min-height:100%; margin-bottom:1px; }
+html body { height:100%; margin:0px; font-family:Arial, Helvetica, sans-serif; font-size:10px; color:#000; line-height:140%; background:#fff none; overflow-y:scroll; }
+html body td { vertical-align:top; text-align:left; }
+
+h1 { padding:0px; margin:0px 0px 25px; font-family:Arial, Helvetica, sans-serif; font-size:1.5em; color:#d55000; line-height:100%; font-weight:normal; }
+h2 { padding:0px; margin:0px 0px 8px; font-family:Arial, Helvetica, sans-serif; font-size:1.2em; color:#000; font-weight:bold; line-height:140%; border-bottom:1px solid #d6d4d4; display:block; }
+h3 { padding:0px; margin:0px 0px 5px; font-family:Arial, Helvetica, sans-serif; font-size:1.1em; color:#000; font-weight:bold; line-height:140%; }
+
+a { color:#005fce; text-decoration:none; }
+a:hover { color:#005fce; text-decoration:underline; }
+a:visited { color:#004aa0; text-decoration:none; }
+
+p { padding:0px; margin:0px 0px 20px; }
+img { padding:0px; margin:0px 0px 20px; border:none; }
+p img, pre img, tt img, li img, h1 img, h2 img { margin-bottom:0px; }
+
+ul { padding:0px; margin:0px 0px 20px 23px; list-style:square; }
+ul li { padding:0px; margin:0px 0px 7px 0px; }
+ul li ul { padding:5px 0px 0px; margin:0px 0px 7px 23px; }
+ul li ol li { list-style:decimal; }
+ol { padding:0px; margin:0px 0px 20px 0px; list-style:decimal; }
+ol li { padding:0px; margin:0px 0px 7px 23px; list-style-type:decimal; }
+ol li ol { padding:5px 0px 0px; margin:0px 0px 7px 0px; }
+ol li ol li { list-style-type:lower-alpha; }
+ol li ul { padding-top:7px; }
+ol li ul li { list-style:square; }
+
+.content { font-size:1.2em; line-height:140%; padding: 20px; }
+
+pre, code { font-size:12px; }
+tt { font-size: 1.2em; }
+pre { margin:0px 0px 20px; }
+pre.codeinput { padding:10px; border:1px solid #d3d3d3; background:#f7f7f7; }
+pre.codeoutput { padding:10px 11px; margin:0px 0px 20px; color:#4c4c4c; }
+pre.error { color:red; }
+
+@media print { pre.codeinput, pre.codeoutput { word-wrap:break-word; width:100%; } }
+
+span.keyword { color:#0000FF }
+span.comment { color:#228B22 }
+span.string { color:#A020F0 }
+span.untermstring { color:#B20000 }
+span.syscmd { color:#B28C00 }
+span.typesection { color:#A0522D }
+
+.footer { width:auto; padding:10px 0px; margin:25px 0px 0px; border-top:1px dotted #878787; font-size:0.8em; line-height:140%; font-style:italic; color:#878787; text-align:left; float:none; }
+.footer p { margin:0px; }
+.footer a { color:#878787; }
+.footer a:hover { color:#878787; text-decoration:underline; }
+.footer a:visited { color:#878787; }
+
+table th { padding:7px 5px; text-align:left; vertical-align:middle; border: 1px solid #d6d4d4; font-weight:bold; }
+table td { padding:7px 5px; text-align:left; vertical-align:top; border:1px solid #d6d4d4; }
+
+
+
+
+
+  </style></head><body><div class="content"><h2>Contents</h2><div><ul><li><a href="#1">Publishing</a></li><li><a href="#2">Initialization</a></li><li><a href="#3">Circle</a></li><li><a href="#4">Sphere</a></li><li><a href="#5">Plot</a></li></ul></div><h2 id="1">Publishing</h2><pre class="codeinput"><span class="comment">% This is an example to illustrate how easy it is to create a document</span>
+<span class="comment">% in the PUBLISH environment</span>
+
+clc
+clear
+close <span class="string">all</span>
+</pre><h2 id="2">Initialization</h2><p>Set the * <i>radius</i> *</p><pre class="codeinput">r = 2;
+</pre><h2 id="3">Circle</h2><p>This part calcuate the area for <i>Circle</i></p><pre class="codeinput">A = pi*r^2
+C = 2*pi*r
+</pre><pre class="codeoutput">A =
+   12.5664
+C =
+   12.5664
+</pre><h2 id="4">Sphere</h2><p>This part calcuate the area for <i>Sphere</i></p><pre class="codeinput">A2 = 4*pi*r^2
+V = 4/3*pi*r^3
+</pre><pre class="codeoutput">A2 =
+   50.2655
+V =
+   33.5103
+</pre><h2 id="5">Plot</h2><pre class="codeinput">x = 0:0.1:10;
+y = sin(x)
+plot(x,y)
+</pre><pre class="codeoutput">y =
+  Columns 1 through 7
+         0    0.0998    0.1987    0.2955    0.3894    0.4794    0.5646
+  Columns 8 through 14
+    0.6442    0.7174    0.7833    0.8415    0.8912    0.9320    0.9636
+  Columns 15 through 21
+    0.9854    0.9975    0.9996    0.9917    0.9738    0.9463    0.9093
+  Columns 22 through 28
+    0.8632    0.8085    0.7457    0.6755    0.5985    0.5155    0.4274
+  Columns 29 through 35
+    0.3350    0.2392    0.1411    0.0416   -0.0584   -0.1577   -0.2555
+  Columns 36 through 42
+   -0.3508   -0.4425   -0.5298   -0.6119   -0.6878   -0.7568   -0.8183
+  Columns 43 through 49
+   -0.8716   -0.9162   -0.9516   -0.9775   -0.9937   -0.9999   -0.9962
+  Columns 50 through 56
+   -0.9825   -0.9589   -0.9258   -0.8835   -0.8323   -0.7728   -0.7055
+  Columns 57 through 63
+   -0.6313   -0.5507   -0.4646   -0.3739   -0.2794   -0.1822   -0.0831
+  Columns 64 through 70
+    0.0168    0.1165    0.2151    0.3115    0.4048    0.4941    0.5784
+  Columns 71 through 77
+    0.6570    0.7290    0.7937    0.8504    0.8987    0.9380    0.9679
+  Columns 78 through 84
+    0.9882    0.9985    0.9989    0.9894    0.9699    0.9407    0.9022
+  Columns 85 through 91
+    0.8546    0.7985    0.7344    0.6630    0.5849    0.5010    0.4121
+  Columns 92 through 98
+    0.3191    0.2229    0.1245    0.0248   -0.0752   -0.1743   -0.2718
+  Columns 99 through 101
+   -0.3665   -0.4575   -0.5440
+</pre><img vspace="5" hspace="5" src="app1_01.png" alt=""> <p class="footer"><br><a href="https://www.mathworks.com/products/matlab/">Published with MATLAB&reg; R2022b</a><br></p></div><!--
+##### SOURCE BEGIN #####
+%% Publishing
+
+% This is an example to illustrate how easy it is to create a document
+% in the PUBLISH environment
+
+clc
+clear
+close all 
+
+%% Initialization
+% Set the * _radius_ * 
+
+r = 2;
+
+%% Circle
+% This part calcuate the area for _Circle_ 
+
+A = pi*r^2
+C = 2*pi*r
+
+
+%% Sphere
+% This part calcuate the area for _Sphere_ 
+
+A2 = 4*pi*r^2
+V = 4/3*pi*r^3
+
+%% Plot
+
+x = 0:0.1:10;
+y = sin(x)
+plot(x,y)
+
+
+
+
+
+
+
+##### SOURCE END #####
+--></body></html>
